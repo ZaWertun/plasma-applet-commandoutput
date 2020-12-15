@@ -8,5 +8,5 @@ A more advanced widget called Kargos [can be found on the KDE Store](https://sto
 
 ## Screenshots
 
-![](https://i.imgur.com/YcZgsPw.png)
+![](/example.png?raw=true "Example output from wttr.in")
 
