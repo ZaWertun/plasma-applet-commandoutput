@@ -353,10 +353,14 @@ Item {
 			254: '#e4e4e4',
 			255: '#eeeeee'
 		};
+		let open = 0;
 		function replacer(match, p1) {
 			if (p1 == '0') {
-				return '</font>';
+				let res = '</font>'.repeat(open);
+				open = 0;
+				return res;
 			} else if (p1.substr(0, 5) == '38;5;') {
+				open += 1;
 				let values = p1.split(';'),
 						color = ansi256[parseInt(values[2])];
 				return '<font color=\"' + (color ? color : 'red') + '\">';
