@@ -4,20 +4,20 @@
 
 	<group name="General">
 		<entry name="interval" type="int">
-			<default>1000</default>
+			<default>900000</default>
 		</entry>
 		<entry name="command" type="string">
-			<default>echo "Test $(date +%S)"</default>
+			<default>curl wttr.in?1</default>
 			<!-- <default>echo "&lt;a href=\"https://google.com\"&gt;Test $(date +%S)&lt;/a&gt;"</default> -->
 		</entry>
 		<entry name="waitForCompletion" type="bool">
 			<default>false</default>
 		</entry>
 		<entry name="fontSize" type="int">
-			<default>16</default>
+			<default>12</default>
 		</entry>
 		<entry name="fontFamily" type="string">
-			<default></default>
+			<default>monospace</default>
 		</entry>
 		<entry name="bold" type="bool">
 			<default>false</default>
